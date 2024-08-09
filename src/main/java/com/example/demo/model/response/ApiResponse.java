@@ -1,5 +1,7 @@
 package com.example.demo.model.response;
 
+import java.sql.Date;
+
 import org.springframework.http.HttpStatus;
 
 import lombok.AllArgsConstructor;
@@ -13,5 +15,4 @@ public class ApiResponse<T> {
     private String message;
     private T payload ;
     private HttpStatus status;
-    private int statusCode;
 }
